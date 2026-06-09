@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0B0B0B;
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 60px;
+}
+.logo img{
+    width: 220px;
+}
+.nav-links ul{
+    margin-top : 35px;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:white;
+}
+.nav-links ul li a:hover{
+    color: #7C3AED;
+}
+.navbar-right img{
+    width: 40px;
+    height: 40px;
+    margin-top:25px;
+}
+.hero{
+    
+    border: 1px solid black;
+    height:400px;
+    width: 100%;
+    background:
+        linear-gradient(
+            transparent,
+        rgba(0,0,0,0.9)
+        ),
+        url("hero.jpg");
+    background-size: cover;
+    background-position: 70% 30%;
+    background-repeat: no-repeat;
+}
+
+.text-1{
+    margin-top: 100px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.text-2{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.text-3{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.text-4{
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.properties{
+    margin-left: 60px;
+    margin-top: 100px;
+    width: 90vw;
+}
+.properties p{
+    color: #7C3AED;
+}
+.explore{
+    display: flex;
+    justify-content: space-between;
+}
+.explore-text{
+    font-size: 25px;
+    font-weight: bold;
+}
+.view{
+    background-color: black;
+    border: 1px solid #7C3AED;
+    color:#7C3AED;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.grid{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:16px;
+    width: 90vw;
+    margin-left: 60px;
+
+}
+.property{
+    border:1px solid grey;
+}
+.property-image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.property-details{
+    margin-left: 20px;
+}
+.property-name{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.specs{
+    display : flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.final-price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+.details{
+    background-color: #7C3AED;
+    color:white;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.service-container{
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-type{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.explore-now-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.explore-now-link a{
+    text-decoration: none;
+    color: #7C3AED;
+}
+.location-container{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    width:90vw;
+    margin-left:60px;
+}
+
+.location-container::-webkit-scrollbar{
+    display:none;
+}
+
+.city{
+    min-width:200px;
+    height:130px;
+    position:relative;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid #262626;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.city:hover{
+    transform:translateY(-5px);
+    border-color:#7C3AED;
+    box-shadow:0 0 15px rgba(124,58,237,0.4);
+}
+
+.location-image{
+    width:100%;
+    height:100%;
+}
+
+.location-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.city::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:50%;
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,0.9)
+    );
+}
+
+.location-name{
+    position:absolute;
+    bottom:12px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:2;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    
+}
+.feedback{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-left:60px;
+}
+.person{
+    display:flex;
+    margin-top:20px;
+    margin-left:60px;
+}
+.quote img{
+    width:60px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.text1{
+    margin-top:10px;
+    margin-left: 10px;
+}
+.feedback-container{
+    border:1px solid grey;
+}
+.stats{
+    width:90vw;
+    margin:80px auto 0;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    border:1px solid #262626;
+    border-radius:15px;
+    padding:30px;
+}
+
+.stat-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.stat-box i{
+    font-size:30px;
+    color:#7C3AED;
+}
+
+.stat-box h2{
+    color:#8B5CF6;
+    font-size:32px;
+}
+
+.stat-box p{
+    color:#BDBDBD;
+}
+footer{
+    margin-top:50px;
+    border-top:1px solid #262626;
+    padding-top:50px;
+}
+
+.footer-container{
+    width:90vw;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr
+        1.2fr;
+
+    gap:40px;
+}
+
+.footer-col img{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.footer-col p{
+    color:#BDBDBD;
+    line-height:1.8;
+}
+
+.footer-col h3{
+    margin-bottom:20px;
+    color:white;
+}
+
+.footer-col a{
+    display:block;
+    text-decoration:none;
+    color:#BDBDBD;
+    margin-bottom:10px;
+    transition:.3s;
+}
+
+.footer-col a:hover{
+    color:#7C3AED;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-icons i{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#161616;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social-icons i:hover{
+    background:#7C3AED;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:40px;
+    padding:20px 0;
+    border-top:1px solid #262626;
+    color:#888;
+}
